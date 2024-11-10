@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question Game</h1>
+
+    <script>
+        
+const startGame = confirm("Sifaris vermek isteyirsiniz?");
+
+if (startGame) {
+  const question = confirm("Pizza sifaris etmey isteyirsiniz");
+
+
+  if (question) {
+    const yourMeal = prompt("Xais edirik pizanin olcusun secin (kiçik - 25 sm, orta - 30 sm, böyük - 35 sm)");
+    let price;
+
+
+    if (yourMeal == "böyük") {
+      price = 20;
+    } else if (yourMeal == "orta") {
+      price = 13;
+    } else {
+      price = 9;
+    }
+
+   
+    const priceInfo = `Sizin hesab: ${price}.00 ₼`;
+    const result = `${yourMeal} olculu pizaniz hazirlanir`;
+
+    alert(priceInfo);
+    alert(result);
+  }
+
+  const yourDrink = prompt("Istediyiniz ickini qeyd edin (kola, ayran)");
+if(yourDrink){
+    let price2;
+    if (yourDrink == "kola") {
+      price2 = 2;
+    } else  {
+      price2 = 1;
+    } 
+
+    const result2 = `${yourDrink} hazirlanir`;
+    const priceInfo = `Sizin hesab: ${price2}.00 ₼`;
+    alert(result2);
+    alert(priceInfo);
+    alert("Yene gozleyirik");
+    
+}
+   
+
+  else {
+    
+    alert("Yene gozleyirik");
+    
+  }
+
+
+
+} else {
+
+  alert("Yene gozleyirik");
+}
+
+    </script>
+    
+</body>
+</html>
